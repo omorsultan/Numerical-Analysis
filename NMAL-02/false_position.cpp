@@ -2,7 +2,7 @@
 using namespace std;
 
 double f(double x) {
-    return x*x*x - x - 2; 
+    return log(3 * x) - 3; 
 }
 
 pair<double, int> falsePosition(double a, double b, double tol) {
@@ -35,7 +35,7 @@ pair<double, int> falsePosition(double a, double b, double tol) {
 }
 
 int main() {
-    double a = 1, b = 2 , tolerance = 1e-6;       
+    double a = 0.1, b = 10 , tolerance = 1e-4;       
 
     auto result = falsePosition(a, b, tolerance);
 
