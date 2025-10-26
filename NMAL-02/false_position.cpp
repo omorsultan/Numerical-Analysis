@@ -35,7 +35,7 @@ pair<double, int> falsePosition(double a, double b, double tol) {
 }
 
 int main() {
-    double a = 0.1, b = 10 , tolerance = 1e-4;       
+    double a = 1, b = 10 , tolerance = 1e-4;       
 
     auto result = falsePosition(a, b, tolerance);
 
