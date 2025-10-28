@@ -5,7 +5,7 @@ int main() {
     cout << "Enter number of equations: ";
      int n; cin >> n;
 
-    double a[20][21]; // augmented matrix [A|b]
+    double a[n][n+1]; // augmented matrix [A|b]
 
     cout << "Enter coefficients of augmented matrix (A|b):\n";
     for (int i = 0; i < n; i++) 
@@ -39,7 +39,7 @@ int main() {
     }
 
     // Back Substitution
-    double x[20];
+    double x[n];
     for (int i = n - 1; i >= 0; i--) {
         x[i] = a[i][n];
         for (int j = i + 1; j < n; j++) {
